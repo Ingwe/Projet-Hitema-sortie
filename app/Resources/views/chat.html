@@ -1,0 +1,227 @@
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meat name="description" content="Le meilleur site de vente et d'échange entre particuliers">
+	<meta name="author" content="MonSiteWeb -- http://www.lyes-amlys.fr" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/chat.css">
+
+	<title>MonSuperSite, le meilleur site de vente entre particulier et professionnels</title>
+
+	<noscript>Votre naviguateur ne supporte pas JavaScript! Mettez le à jour ou activez JavaScript</noscript>
+	<meta property="og:title" content="The title" />
+	<meta property="og:type" content="The type" />
+	<meta property="og:url" content="http://lyes-amlys.fr/" />
+	<meta property="og:image" content="The image" />
+
+	<link rel="icon" type="image/png" href="mages/favicon.png" />
+	<!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="/path/favicon.ico" /><![endif]-->
+</head>
+
+
+<body onload="init();">
+	<header class="container-fluid navigation">
+		<div class="row navigation">
+
+			<nav class="navbar navbar-default navbar-fixed-top">
+				 <div class="container-fluid">
+					 <!-- Brand and toggle get grouped for better mobile display -->
+					 <div class="navbar-header ">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#global-search">
+							 <span class="sr-only">Toggle navigation</span>
+							 <span class="icon-bar"></span>
+							 <span class="icon-bar"></span>
+							 <span class="icon-bar"></span>
+						 </button>
+					 	<a class="navbar-brand" href="accueil.html">ProjetWeb</a>
+					 </div>
+
+				 <!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="global-search">
+
+						 <form class="navbar-form navbar-left" role="search">
+							 <div class="form-group">
+							 	<input type="text" class="form-control text-global-search" placeholder="Sortie, cinéma, covoiturage ...">
+							 </div>
+							 <button type="submit" class="btn btn-primary">Rechercher</button>
+						 </form>
+
+						 <ul class="nav navbar-nav navbar-right">
+						 	<li><a href="#"><span class="glyphicon glyphicon-bell"></span></a></li>
+						 	<li><a href="#"><span class="glyphicon glyphicon-envelope"></span></a></li>
+						 
+						 	<li class="dropdown////////////*,">
+						 		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+						 			myAcount<span class="caret"></span>
+						 		</a>
+								<ul class="dropdown-menu" role="menu" aria-labelledby="menuList">
+									<li><a href="profil.html">Mon compte</li>
+									<li><a href="publications.html">Mes activités</a></li>
+									<li><a href="liste-abonnes.html">Mes abonnés</a></li>
+									<li><a href="liste-abonnements.html">Mes Abonnements</a></li>
+									<li><a href="aide.html">Aide - Comment ça marche?</a></li>
+									<li><a href="#">Déconnexion</a></li>
+								</ul>
+						 	</li>
+						 </ul>
+
+					</div><!-- /.navbar-collapse -->
+				 </div><!-- /.container-fluid -->
+			</nav>
+
+		</div><!--row navigation--><!--header-->
+	</header><!--fin_header-->
+
+
+
+	<section>
+		<div class="container">
+			<br/>
+			<div class="row">
+				<div class="col-xs-8">
+					
+				</div>
+
+				<div class="col-xs-4 text-right">
+					<div class="btn-group-xs" role="group" aria-label="...">
+					  <button type="button" class="btn btn-default">En discussion</button>
+					  <button type="button" class="btn btn-success">En ligne</button>
+					  <button type="button" class="btn btn-danger">Hors ligne</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-4 chat-menu">
+					<ul class="nav nav-pills nav-stacked">
+						<li class="active"><a href="#">User</a></li>
+						<li><a href="#">User</a></li>
+						<li><a href="#">User</a></li>
+						<li><a href="#">User</a></li>
+						<li><a href="#">User</a></li>
+						<li><a href="#">User</a></li>
+						<li><a href="#">User</a></li>
+						<li><a href="#">User</a></li>
+						<li><a href="#">User</a></li>
+						<li><a href="#">User</a></li>
+						<li><a href="#">User</a></li>
+						<li><a href="#">User</a></li>
+					</ul>
+
+					<!--<img src="http://fakeimg.pl/375x115/?text=randomText" width="375" height="115" class="imgPub" />-->
+				</div>
+
+				<div class="col-xs-8 chat-column">
+					<div class="chat table-bordered">
+						<div class="chat-content">
+							<div class="row">
+								<div class="col-xs-2 avatar">
+									<span class="userAvatar img-circle center-block"></span>
+								</div>
+
+								<div class="col-xs-10 chatLine" >
+									<div class="well well-sm">Salut !! je teste le chat</div>
+									<div class="well well-sm">Salut !! je teste le chat</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-xs-10 chatLine-left" >
+									<div class="well well-sm">Ok !! C'est comment alors le chat ?</div>
+									<div class="well well-sm">Salut !! je teste le chat</div>
+								</div>
+
+								<div class="col-xs-2 avatar-left">
+									<span class="userAvatar img-circle center-block"></span>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-xs-2 avatar">
+									<span class="userAvatar img-circle center-block"></span>
+								</div>
+
+								<div class="col-xs-10 chatLine" >
+									<div class="well well-sm">Salut !! je teste le chat</div>
+									<div class="well well-sm">Salut !! je teste le chat</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-xs-10 chatLine-left" >
+									<div class="well well-sm">Ok !! C'est comment alors le chat ?</div>
+									<div class="well well-sm">Salut !! je teste le chat</div>
+								</div>
+
+								<div class="col-xs-2 avatar-left">
+									<span class="userAvatar img-circle center-block"></span>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-xs-2 avatar">
+									<span class="userAvatar img-circle center-block"></span>
+								</div>
+
+								<div class="col-xs-10 chatLine" >
+									<div class="well well-sm">Salut !! je teste le chat</div>
+									<div class="well well-sm">Salut !! je teste le chat</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-xs-10 chatLine-left" >
+									<div class="well well-sm">Ok !! C'est comment alors le chat ?</div>
+									<div class="well well-sm">Salut !! je teste le chat</div>
+								</div>
+
+								<div class="col-xs-2 avatar-left">
+									<span class="userAvatar img-circle center-block"></span>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-xs-2 avatar">
+									<span class="userAvatar img-circle center-block"></span>
+								</div>
+
+								<div class="col-xs-10 chatLine" >
+									<div class="well well-sm">Salut !! je teste le chat</div>
+									<div class="well well-sm">Salut !! je teste le chat</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-xs-10 chatLine-left" >
+									<div class="well well-sm">Ok !! C'est comment alors le chat ?</div>
+									<div class="well well-sm">Salut !! je teste le chat</div>
+								</div>
+
+								<div class="col-xs-2 avatar-left">
+									<span class="userAvatar img-circle center-block"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<form>
+						<div class="input-group input-group-lg">
+							<input type="text" class="form-control" autofocus/>
+							<span class="input-group-btn">
+								<button type="submit" class="btn btn-info">Envoyer</button>
+							</span>
+						</div>						
+					</form>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/myScript.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,12 @@
+@import url(basic-style.css);
+
+body{
+	background:#eeeeee;
+}
+
+
+footer{
+	position: fixed;
+	bottom: 00px;
+	width: 100%;
+}

@@ -1,0 +1,217 @@
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meat name="description" content="Le meilleur site de vente et d'échange entre particuliers">
+	<meta name="author" content="MonSiteWeb -- http://www.lyes-amlys.fr" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/proposer-activite.css">
+
+	<title>MonSuperSite, le meilleur site de vente entre particulier et professionnels</title>
+
+	<noscript>Votre naviguateur ne supporte pas JavaScript! Mettez le à jour ou activez JavaScript</noscript>
+	<meta property="og:title" content="The title" />
+	<meta property="og:type" content="The type" />
+	<meta property="og:url" content="http://lyes-amlys.fr/" />
+	<meta property="og:image" content="The image" />
+
+	<link rel="icon" type="image/png" href="mages/favicon.png" />
+	<!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="/path/favicon.ico" /><![endif]-->
+</head>
+
+
+<body onload="init();">
+	<header class="container-fluid navigation">
+		<div class="row navigation">
+
+			<nav class="navbar navbar-default navbar-fixed-top">
+				 <div class="container-fluid">
+					 <!-- Brand and toggle get grouped for better mobile display -->
+					 <div class="navbar-header ">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#global-search">
+							 <span class="sr-only">Toggle navigation</span>
+							 <span class="icon-bar"></span>
+							 <span class="icon-bar"></span>
+							 <span class="icon-bar"></span>
+						 </button>
+					 	<a class="navbar-brand" href="accueil.html">ProjetWeb</a>
+					 </div>
+
+				 <!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="global-search">
+
+						 <form class="navbar-form navbar-left" role="search">
+							 <div class="form-group">
+							 	<input type="text" class="form-control text-global-search" placeholder="Sortie, cinéma, covoiturage ...">
+							 </div>
+							 <button type="submit" class="btn btn-primary">Rechercher</button>
+						 </form>
+
+						 <ul class="nav navbar-nav navbar-right">
+						 	<li><a href="#"><span class="glyphicon glyphicon-bell"></span></a></li>
+						 	<li><a href="chat.html"><span class="glyphicon glyphicon-envelope"></span></a></li>
+						 
+						 	<li class="dropdown////////////*,">
+						 		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+						 			myAcount<span class="caret"></span>
+						 		</a>
+								<ul class="dropdown-menu" role="menu" aria-labelledby="menuList">
+									<li><a href="profil.html">Mon compte</li>
+									<li><a href="publications.html">Mes activités</a></li>
+									<li><a href="liste-abonnes.html">Mes abonnés</a></li>
+									<li><a href="liste-abonnements.html">Mes Abonnements</a></li>
+									<li><a href="aide.html">Aide - Comment ça marche?</a></li>
+									<li><a href="#">Déconnexion</a></li>
+								</ul>
+						 	</li>
+						 </ul>
+
+					</div><!-- /.navbar-collapse -->
+				 </div><!-- /.container-fluid -->
+			</nav>
+
+		</div><!--row navigation--><!--header-->
+	</header><!--fin_header-->
+
+
+
+	<section>
+
+		<div class="container-fluid">
+			<div class="col-xs-0 col-sm-0 col-md-1 col-lg-1"></div>
+		
+		<div class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<br>
+					<h3>Proposer une activité, c'est gratuit et ça ne changera jamais.</h3>
+				</div>
+			</div><!--titre-->
+			
+			<div class="row">
+				<div class="form-depot-publication col-xs-12 col-sm-12 col-md-6 col-lg-6">
+					<strong><h4 class="error hidden">Vérifiez tous les champs avant la publication de votre annonce</h4></strong><br>
+					<form>
+						<div class="form-group row">
+							<label for="categories">Choisissez une catégorie</label>
+					  		<select id="categories" class="category-choice form-control" required>
+							 	<option>Sorties</option>
+								 <option>Covoiturage</option>
+								 <option>Sport</option>
+								 <option>Coup de main</option>
+								 <option>Bons plans</option>
+							</select>
+						</div>
+						<div class="form-group row">
+					    	<label for="dateActivite">Quand ?</label>
+					    	<input type="date" class="form-control" name="date-activite" id="dateActivite" required>
+					 	 </div>
+
+					 	 <div class="form-group row">
+					    	&nbsp;&nbsp;&nbsp;&nbsp;<label for="timeActiviteDebut">A quelle heure ?</label>
+					    	&nbsp;&nbsp;&nbsp;&nbsp;<input type="time" class="form-control" name="time-activite-debut" id="timeActiviteDebut" required>
+					    	<br/>
+					    	&nbsp;&nbsp;&nbsp;&nbsp;<label for="timeActiviteFin">Jusqu'à quelle heure ?</label>
+					    	&nbsp;&nbsp;&nbsp;&nbsp;<input type="time" class="form-control" name="time-activite-fin" id="timeActiviteFin" required>
+					 	 </div>
+
+						<div class="form-group row">
+					    	<label for="nbPersonnes">Combien de personnes invitées (maximum) ?</label>
+					    	<input type="number" name="maxPersonnes" class="form-control" id="nbPersonnes" placeholder="ex: 75015" required>
+					 	</div>
+
+					 	<div class="form-group row">
+					    	<label for="title-my-publicattion">Le titre de votre annonce</label>
+					    	<input type="email" class="form-control" id="title-my-publication" placeholder="Le titre de votre annonce" required>
+					 	 </div>
+
+					 	 <div class="form-group row" >
+					    	<label for="description">La description de votre annonce</label>
+					    	<br><textarea class="form-control" rows="6" id="description" required></textarea>
+					 	 </div>
+
+					 	 <div class="form-group row">
+							<label for="categories">(Optionnel) Visible par :</label>
+					  		<select id="categories" class="category-choice form-control">
+							 	<option>Tout le monde</option>
+								 <option>Uniquement les femmes</option>
+								 <option>Uniquement les hommes</option>
+							</select>
+						</div>
+
+						<div class="form-group row">
+					    	&nbsp;&nbsp;&nbsp;&nbsp;<label for="ageMin">(Optionnel) Age minimum des invités : </label>
+					    	&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" class="form-control" name="age-minimum" id="ageMin" required>
+					    	<br/>
+					    	&nbsp;&nbsp;&nbsp;&nbsp;<label for="ageMax">(Optionnel) Age maximum des invités: </label>
+					    	&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" class="form-control" name="age-maximum" id="ageMax" required>
+					 	 </div>
+
+					 	<div class="checkbox row">
+						    <label>
+						      <input type="checkbox"> J'accépte les <a href="#" target="_blank">Conditions générales d'utilisation</a>.
+						    </label>
+						</div>
+
+					  	<button type="submit" class="col-lg-12 btn btn-success">Publier l'annonce</button>
+					</form>
+				</div>
+			</div><!--formulaire-->
+			
+		</div>
+
+		<div class="col-xs-0 col-sm-0 col-md-1 col-lg-1"></div>
+		
+		</div>
+	</section>
+
+
+
+	<footer class="container-fluid">
+			<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+				<ul class="list-inline text-center">
+					<h4>Rejoignez nous:</h4>
+					<li><a href="#" title="Facebook"><span class="el-icon-facebook fb-icon"></span></a><br></li>
+					<li><a href="#" title="Twitter"><span class="el-icon-twitter tw-icon"></span></a><br></li>
+					<li><a href="#" title="YouTube"><span class="el-icon-youtube you-icon"></span></a><br></li>
+					<li><a href="#" title="Tumblr"><span class="el-icon-tumblr tu-icon"></span></a><br></li>
+				</ul>	
+			</div>
+
+			<div class="col-xs-3 col-md-3 col-lg-3">
+				<ul>
+					<h4>Nous contacter:</h4>
+					<li><a href="#">Formulaire de contact</a><br><br></li>
+					
+				</ul>
+			</div>
+
+			<div class="col-xs-3 col-md-3 col-lg-3">
+				<ul>
+					<h4>Mentions légales:</h4>
+					<li><a href="#">Comment ça marche? (aide)</a><br></li>
+					<li><a href="#">Charte d'utilisation</a><br></li>
+					<li><a href="#">Qui sommes nous?</a><br></li>
+					<li><a href="#">Presse</a><br></li>
+				</ul>
+			</div>
+
+			<div class="col-xs-3 col-md-3 col-lg-3">
+				<ul>
+					<h4>Services:</h4>
+					<li><a href="#">Proposer une activité</a><br></li>
+					<li><a href="#">Supprimer une activité</a><br></li>
+					<li><a href="#">Signaler une activité/compte</a><br></li>
+					<li><a href="#">Parainer des amis</a><br></li>
+				</ul>
+			</div>
+
+	</footer>
+
+
+	<script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/myScript.js"></script>
+</body>
+</html>
+

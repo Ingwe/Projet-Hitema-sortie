@@ -1,0 +1,13 @@
+@import url(basic-style.css);
+
+
+.bg-info{
+	font-size: 18px;
+	font-weight: lighter;
+}
+section{
+	background: #eeeeee;
+}
+.danger {
+	color: #f00;
+}

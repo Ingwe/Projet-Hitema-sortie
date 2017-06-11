@@ -1,0 +1,108 @@
+<!--header non connecté -->
+<div class="row navigation">
+
+				<nav class="navbar navbar-default navbar-fixed-top">
+					<div class="container-fluid">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#global-search">
+								<span class="sr-only">Toggle navigation</span> 
+									<!--<span class="icon-bar"></span> 
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>-->
+									<span class="link-redus-header">Reduire/ Afficher</span>
+							</button>
+							<a class="navbar-brand" href="accueil.html">ProjetWeb</a>
+						</div>
+
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="global-search">
+
+							<form class="navbar-form navbar-left text-left" role="search" action="advancedsearch" method="get">
+								<div class="form-group">
+									<input type="text" class="form-control text-global-search" placeholder="Sortie, cinéma, covoiturage ..." name="clef">
+							    	<input type="hidden"  name="prixmin">
+							    	<input type="hidden"  name="prixmax">
+							    	<input type="hidden"  name="categorie">
+							    	<input type="hidden"  name="region">
+							    	<input type="hidden"  name="optionsRadios">
+								</div>
+								<button type="submit" class="btn btn-primary" >Rechercher</button></a>
+
+								<div class="link-advanced-search text-right">
+									<a href="ProjetWeb/form-advanced-search-mobile.html">Faire une recherche avancée</a>
+								</div>
+							</form>
+
+							<ul class="account-active container-connexion-inscription-links nav navbar-nav navbar-right">
+								<span class="btn-header-account">
+									<a href="connexion.html" class="link-connexion">Connexion</a>&nbsp;&nbsp;
+									<a href="inscription.html" class="link-inscription">Inscription</a>
+								</span>
+							</ul>
+
+						</div>
+						<!-- /.navbar-collapse -->
+					</div>
+					<!-- /.container-fluid -->
+				</nav>
+</div>
+
+<!--header connecté -->
+<header class="container-fluid navigation">
+		<div class="row navigation">
+
+			<nav class="navbar navbar-default navbar-fixed-top">
+				 <div class="container-fluid">
+					 <!-- Brand and toggle get grouped for better mobile display -->
+					 <div class="navbar-header ">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#global-search">
+							 <span class="sr-only">Toggle navigation</span>
+							 <span class="icon-bar"></span>
+							 <span class="icon-bar"></span>
+							 <span class="icon-bar"></span>
+						 </button>
+					 	<a class="navbar-brand" href="#">MonSuperSite</a>
+					 </div>
+
+				 <!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="global-search">
+
+						 <form class="navbar-form navbar-left" role="search">
+							 <div class="form-group">
+							 	<input type="text" class="form-control text-global-search" placeholder="Smartphone, Television etc...">
+							 </div>
+							 <button type="submit" class="btn btn-primary">Rechercher</button>
+						 </form>
+
+						 <ul class="nav navbar-nav navbar-right">
+						 	<li>
+								<button class="btn btn-success add-activity">
+									<a href="#" target="_blank">Proposer une activité</a>
+								</button>
+							</li>
+						 	<li><a href="#"><span class="glyphicon glyphicon-bell"></span></a></li>
+						 	<li><a href="#"><span class="glyphicon glyphicon-envelope"></span></a></li>
+							
+						 	<li class="dropdown////////////*,">
+						 		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+						 		myAccount<span class="caret"></span>
+						 		</a>
+								<ul class="dropdown-menu" role="menu" aria-labelledby="menuList">
+									<li><a href="profil.html">Mon profil</li>
+									<li><a href="publications.html">Mes publications</a></li>
+									<li><a href="liste-des-annonces-sauvegardees.html">Mes annonces sauvegardées</a></li>
+									<li><a href="abonnements.html">Mes abonnements</a>
+									<li><a href="abonnes.html">Mes abonnés</a></li>
+									<li><a href="aide.html">Comment ça marche? (Aide)</a></li>
+									<li><a href="#">Déconnexion</a></li>
+								</ul>
+						 	</li>
+						 </ul>
+
+					</div><!-- /.navbar-collapse -->
+				 </div><!-- /.container-fluid -->
+			</nav>
+
+		</div><!--row navigation--><!--header-->
+</header><!--fin_header-->

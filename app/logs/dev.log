@@ -1,0 +1,4 @@
+[2017-06-11 17:46:47] php.DEBUG: symlink(): Could not fetch file information(error 3) {"type":2,"file":"C:\\wamp64\\www\\Sortie-Finale\\vendor\\symfony\\symfony\\src\\Symfony\\Component\\Filesystem\\Filesystem.php","line":334,"level":28928} []
+[2017-06-11 17:46:47] php.DEBUG: symlink(): Cannot create symlink, error code(1314) {"type":2,"file":"C:\\wamp64\\www\\Sortie-Finale\\vendor\\symfony\\symfony\\src\\Symfony\\Component\\Filesystem\\Filesystem.php","line":334,"level":28928} []
+[2017-06-11 17:46:47] php.DEBUG: symlink(): Could not fetch file information(error 3) {"type":2,"file":"C:\\wamp64\\www\\Sortie-Finale\\vendor\\symfony\\symfony\\src\\Symfony\\Component\\Filesystem\\Filesystem.php","line":334,"level":28928} []
+[2017-06-11 17:46:47] php.DEBUG: symlink(): Cannot create symlink, error code(1314) {"type":2,"file":"C:\\wamp64\\www\\Sortie-Finale\\vendor\\symfony\\symfony\\src\\Symfony\\Component\\Filesystem\\Filesystem.php","line":334,"level":28928} []

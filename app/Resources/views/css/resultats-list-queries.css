@@ -1,0 +1,29 @@
+/***un fichier à mettre après certains fichiers ! OBLIGATOIRE****/
+section .row{
+	background: #cccccc;
+}
+
+@media all and (min-width:1000px){
+	
+}
+
+@media only screen and (max-width:1024px){
+
+	section > .search-nav-fixed-top{
+		display: none;
+	}
+
+	.aside-fixed{
+		position: relative;
+		margin-top: 20px;
+	}
+
+
+
+}
+
+@media (max-width: 1199px){
+	.form-advenced-search-container{
+		display: none;
+	}
+}

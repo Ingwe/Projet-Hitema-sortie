@@ -1,0 +1,39 @@
+@import url(basic-style.css);
+
+
+section{
+	background-color: #eeeeee;
+}
+.form-depot-publication{
+	margin-top: 50px;
+}
+
+textarea#description {
+    border: 0 none white;
+    overflow: hidden;
+    padding: 5px 5px 5px 5px;
+    outline: none;
+    resize: none;
+	box-shadow: inset 5px 5px 15px -10px #656565;
+	filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=134, Strength=35);
+}
+
+
+.error{
+	color: #ff4455;
+}
+
+.btn-remove-img{
+	padding: 3px 3px 3px 3px;
+	background-color: #ff5522;
+	color: #000;
+	border: 1px inset #000;
+}
+
+/*******comment ça marche************/
+
+.question{
+	font-size: 24px;
+	color: #22aa33;
+}
+/*******fin comment ça marche***********/

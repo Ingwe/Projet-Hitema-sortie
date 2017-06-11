@@ -1,0 +1,108 @@
+@import url(basic-style.css);
+
+/*******************************************SECTION**************************************/
+
+section > h3{
+	color: #cccccc;
+}
+
+
+body, section{
+	background-color: #dddddd;
+}
+
+.add-activity {
+	text-decoration: none;
+	background-color: #ccc;
+	position: relative;
+	top: 3px;
+}
+.btn-success:hover, .add-activity:hover {
+	text-decoration: none;
+	background-color: #ffcc00;
+}
+.principal-section-resultats{
+	margin-top: 100px;
+}
+.title-resultat{
+	color: #000000;
+}
+
+.price{
+	font-size: 20px;
+}
+.gold{
+	color: #ffcc00;
+}
+
+div[class*="-btn-resultats-aside"]{
+	background: none;
+}
+
+div[class*="-btn-resultats-aside"] a{
+	color: #013310;
+}
+
+div[class*="-btn-resultats-aside"]:hover > a{
+	color: #ffffff;
+	text-decoration: none;
+}
+div[class*="-btn-resultats-aside"] a,div[class*="-resultats-aside"]{
+	color: #013310;
+}
+
+div[class*="-btn-resultats-aside"]:hover > a{
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.resultat{
+	margin-top: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	border-bottom: 1px #000000 inset;
+	background-color: #ffffff;
+}
+
+.btn-search-again{
+	display: none;
+}
+
+.aside-fixed{
+		position: fixed;
+		right: 00px;
+}
+
+
+.container-result{
+	margin-bottom: 15px;
+
+	border-top: 1px inset #333;
+}
+@media all and (min-width:1000px){
+	
+}
+@media only screen and (max-width:1024px){
+
+	section > .search-nav-fixed-top{
+		display: none;
+	}
+
+	.aside-fixed{
+		position: relative;
+		margin-top: 20px;
+	}
+
+	.btn-search-again{
+		display: block;
+	}
+
+}
+
+
+
+footer{
+	margin-top: 20px;
+}
+/******************************************fin-SECTION************************************/
