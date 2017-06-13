@@ -10,9 +10,9 @@
         le titre de base, les CSS, JavaScript etc.
         -->
         {% block stylesheets %}
-            <link rel="stylesheet" type="text/css" href="css/elusive-webfont.css">
-            <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-            <link rel="stylesheet" type="text/css" href="css/index.css">
+            <link rel="stylesheet" type="text/css" href="{{ asset('css/elusive-webfont.css') }}">
+            <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.css') }}">
+            <link rel="stylesheet" type="text/css" href="{{ asset('css/index.css') }}">
         {% endblock %}
         
         <meta charset="utf-8">
