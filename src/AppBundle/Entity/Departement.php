@@ -9,19 +9,18 @@
 namespace AppBundle\Entity;
 
 /**
- * Description of TypeActivite
+ * Description of Departement
  *
  * @author jason
  */
-
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
+
 /**
- * @ORM\Entity(repositoryClass="TypeActiviteRepository")
- * @ORM\Table(name="TypeAct")
+ * @ORM\Entity(repositoryClass="DepartementRepository")
+ * @ORM\Table(name="Departements")
  */
-class TypeActivite {
-    //put your code here
+class Departement {
     
     /**
      * @var type int
@@ -38,24 +37,19 @@ class TypeActivite {
      */
     protected $nom;
     
-    
-     /**
-     * @var Skill[|ArrayCollection]
-     * @ORM\OneToMany(targetEntity="Activite", mappedBy="activite")
+    /**
+     * @var Experience[|ArrayCollection]
+     * @ORM\OneToMany(targetEntity="Activite", mappedBy="departement")
      * @ORM\JoinColumn(nullable=false)
-     */
+    */
     protected $activites;
-
-    function getNom() {
-        return $this->nom;
-    }
-
-    function setNom($nom) {
-        $this->nom = $nom;
-    }
-
+    
     public function __toString() {
-        return $this->nom;
+        if ($this->id <10){
+            return "0".($this->id)." - ". $this->nom;
+        }else{
+            return ($this->id)." - ". $this->nom;
+        }
     }
-
+    
 }

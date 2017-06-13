@@ -5,74 +5,94 @@ namespace AppBundle\Entity;
 
 use FOS\UserBundle\Model\User as BaseUser;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="UserRepository")
  * @ORM\Table(name="Utilisateur")
  */
 class User extends BaseUser
 {
     /**
-     * @ORM\NumUtl 
+     * @var type int
+     * @ORM\Id()
      * @ORM\Column(type="integer")
      * @ORM\GeneratedValue(strategy="AUTO")
      */
     protected $id;
     
     /**
-     * @ORM\NomUtl 
      * @ORM\Column(type="string")
      */
     protected $nom;
     
     /**
-     * @ORM\PrenomUtl 
      * @ORM\Column(type="string")
      */
     protected $prenom;
     
     /**
-     * @ORM\Adr1Utl 
+     * @Assert\NotNull()
+     * @ORM\Column(type="string")
+     * @ORM\Column(unique=true)
+     */
+    protected $email;
+    
+    /**
+     * @Assert\NotNull()
+     * @ORM\Column(type="string")
+     */
+    protected $password;
+    
+    /**
      * @ORM\Column(type="string")
      */
     protected $adresse1;
     
     /**
-     * @ORM\Adr2Utl 
      * @ORM\Column(type="string")
      */
     protected $adresse2;
     
     /**
-     * @ORM\CPUtl
      * @ORM\Column(type="string")
      */
     protected $codePostal;
     
     /**
-     * @ORM\VilleUtl 
      * @ORM\Column(type="string")
      */
     protected $ville;
     
     /**
-     * @ORM\TelUtl  
      * @ORM\Column(type="string")
      */
     protected $telephone;
     
     /**
-     * @ORM\DatNaisUtl 
      * @ORM\Column(type="date")
      */
     protected $dateNaissance;
     
     /**
-     * @ORM\NomUtl 
      * @ORM\Column(type="string")
+     * @ORM\Column(unique=true)
      */
     protected $NomUtl;
     
+    /**
+     * @var Experience[|ArrayCollection]
+     * @ORM\OneToMany(targetEntity="Activite", mappedBy="createur")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    protected $activitesCrees;
+    
+    /**
+     * Many Users have Many Activite.
+     * @ORM\ManyToMany(targetEntity="Activite", mappedBy="participants")
+    */
+    protected $activites;
+            
     function getId() {
         return $this->id;
     }
