@@ -1,0 +1,46 @@
+@import url(basic-style.css);
+
+
+section{
+  /*
+  background: -webkit-linear-gradient(90deg, #649173 10%, #DBD5A4 90%); // Chrome 10+, Saf5.1+
+  background:    -moz-linear-gradient(90deg, #649173 10%, #DBD5A4 90%); // FF3.6+
+  background:     -ms-linear-gradient(90deg, #649173 10%, #DBD5A4 90%); // IE10
+  background:      -o-linear-gradient(90deg, #649173 10%, #DBD5A4 90%); // Opera 11.10+
+  background:         linear-gradient(90deg, #649173 10%, #DBD5A4 90%); // W3C
+  */
+  background-color: #ccc;               
+}
+.form-depot-publication{
+	margin-top: 50px;
+}
+
+textarea#description {
+    border: 0 none white;
+    overflow: hidden;
+    padding: 0;
+    outline: none;
+    resize: none;
+	box-shadow: inset 5px 5px 15px -10px #656565;
+	filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=134, Strength=35);
+}
+
+
+.error{
+	color: #ff4455;
+}
+
+
+.container-social-btns{
+	border-bottom: 1px outset #cccccc;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.advice-infos p{
+	padding: 10px 10px 10px 10px;
+}
+
+form .principal-form{
+	background-color: #dddddd;
+}

@@ -1,0 +1,176 @@
+body{
+	/*on dÃ©cale de  la mÃªme hauteur que le header*/
+	background-color: #ffffff;
+}
+
+/****************************************************** HEADER *********************************************************/
+a:hover, a:focus, a {
+	text-decoration: none;
+}
+header{
+	z-index: 999;
+}
+
+header .btn-connexion-inscription{
+	position: relative;
+	top: 10px;
+	
+}
+
+header .btn-connexion-inscription a{
+	color: #fff;
+}
+
+header .account-active{
+	position: relative;
+	bottom: 3px;
+}
+
+.navbar-form .form-control {
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+  }
+#logo{
+	margin-left: 5px;
+	margin-top: 5px;
+}
+
+.navbar-right{
+	margin-right: 20px;
+	margin-top: 5px;
+}
+
+.form-container{
+	margin-left: 0 auto;
+	margin-right: 0 auto;
+}
+
+.text-global-search{
+box-shadow: inset 5px 5px 15px -10px #656565;
+filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=134, Strength=35);
+}
+
+header .navbar{
+	background-color: #19bb88;
+}
+
+.navbar-default .navbar-brand, .glyphicon, .navbar-default .navbar-nav > li > a {
+color: #ffffff;
+}
+
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+background-color: #19bb88;
+color: #eeeeee;
+}
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+text-decoration: none;
+color: #262626;
+background-color: #19aa88;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+background-color: #FFFFFF;
+}
+
+.link-redus-header{
+	color: #ddd;
+}
+
+.bg-warning, .bg-info, .bg-primary, .bg-danger {
+	padding: 6px 6px 6px 6px;
+}
+section{
+	margin-top: 55px;
+	padding-bottom: 10px;
+	min-height: 450px;
+}
+
+.error{
+	color: red;
+}
+.link-advanced-search a{
+	color: #eeeeee;
+}
+
+@media (max-width: 767px){
+
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+	color: #ffffff;
+	background-color: transparent;
+	}
+
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+		color: #000000;
+	}
+}
+
+@media all and (min-width: 1024px){
+
+	.navbar-form .form-group{
+		margin-right: 0 auto !important;
+		margin-left: 0 auto !important;
+		margin-left: 250px;
+		width: 300px;
+
+	}
+
+	.navbar-right .dropdown{
+		margin-right: -35px;
+	}
+}
+
+
+@media (min-width: 1200px){
+	.link-advanced-search{
+		display: none;
+	}
+}
+/****************************************************** FIN_HEADER *********************************************************/
+
+.container-btn-social .facebook{
+	color: #003366;	
+}
+.container-btn-social .gplus{
+	color: #ee2222;
+}
+.container-btn-social .send-mail{
+	color: #000;
+}
+
+.border-left{
+	border-left: 1px inset #000;
+}
+
+.border-right{
+	border-right: 1px inset #000;
+}
+
+/****************************************************** Footer *********************************************************/
+
+footer{
+	background-color: black;
+}
+
+
+footer div ul li{
+	list-style-type: none;
+
+}
+
+footer a{
+	color: #999999;
+	font-weight: lighter;
+}
+
+footer .fb-icon:hover{
+	color: #2255ff;
+}
+footer .tw-icon:hover{
+	color: #6677dd;
+}
+footer .you-icon:hover{
+	color: #ff5544;
+}
+/****************************************************** fin_footer *********************************************************/

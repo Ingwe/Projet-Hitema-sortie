@@ -1,0 +1,22 @@
+.row {
+    margin-left: 00px;
+    margin-right: 00px;
+}
+
+
+.notes-user, .nom-user {
+	position: relative;
+	left: 20px;
+	font-size: 15px;
+}
+
+.user-infos-container {
+	margin-bottom: 50px;
+	background-color: #333;
+	color: #fff;
+	font-weight: bolder;
+}
+
+.bg-warning, .bg-info {
+	padding: 6px 6px 6px 6px;
+}
