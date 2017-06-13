@@ -182,29 +182,25 @@
                             <!-- ICI JE MET UN FOR VITE FAIT EN ATTENDANT D'AVOIR LES MODELS ET CONTROLLER D'OPERATIONNEL
                             MAIS AU MOINS TU PEUX DEJA AVOIR UN APPERCU DE CE A QUOI TWIG RESSEMBLE ET COMMENT ON L'UTILISE
                             -->
-                            {% for i in 0..12 %}
+                            {% for activite in activites %}
                                 <div class="publication col-xs-12 col-sm-12 col-md-12 col-lg-6 text-left">
                                     <div class="col-xs-1"></div>
                                     <div class="col-xs-10">
-                                            <h3>Aller regarder Fast & Furios 8</h3>
-                                            <span>Proposée par : <a href="user-profile.html">Vendeur_alpha</a></span><br>
+                                            <h3>{{activite.nom}}</h3>
+                                            <span>Proposée par : <a href="{{path('user_profil', {'nomUtl': activite.createur.nomUtl})}}">{{activite.createur.nomUtl}}</a></span><br>
                                             <span>
-                                                    <a href="#">Aujourd'hui</a> à <strong>16h</strong> jusqu'à <strong>19h</strong>
+                                                    <strong>{{activite.debut|date("d/m/Y")}}</strong> jusqu'à <strong>{{activite.fin|date("d/m/Y")}}</strong>
                                                     <span> à <a href="#">Paris(75015)</a></span>
                                             </span><br/>
-                                            <span>Personnes invitées : <strong>{{i+1}}</strong></span><br/>
+                                            <span>Personnes invitées : <strong>{{activite.nbParticipantsPossible}}</strong></span>
+                                            <span>Prix : <strong>{{activite.prix}}€</strong></span><br/>
                                             <span>
                                                     <a href="#"><span class="btn btn-add-to-list">Signaler</span></a>
                                                     <a href="#"><span class="btn btn-add-to-list">+Partager</span></a>
                                             </span><br/>
-                                            <p class="row col-xs-10">ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                            <p class="row col-xs-10">{{activite.commentaire}}</p>
                                             <div class="row col-xs-12">
-                                                    <button class="btn btn-primary col-xs-10">Participer</button>
+                                                <a href="#"><button class="btn btn-primary col-xs-10">Participer</button></a>
                                             </div>
                                     </div>
                                     <div class="col-xs-1"></div>
